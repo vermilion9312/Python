@@ -14,10 +14,8 @@ lotto = []
 
 
 i = 0
-while len(lotto()) < 6:
+while len(lotto) < 6:
 	r = random.randint(1, 45)
-	s.add(r)
-	lotto = list(s)
-	
+	lotto.append(r)
 	i += 1
 print(lotto)
