@@ -21,11 +21,23 @@
 		15	
 '''
 
-print('===[2023-01-19(목) #01]===')
+
+
+
+print('===[2023-03-03(금)]===')
 i = 1
 while i <= 15:
 	if i >= 5 and i <= 10 and i % 3 == 0:
-		print("안녕")
+		print("안녕", end=" ")
 	else:
-		print(i)
-	i += 1
+		print()
+i += 1
+
+# print('===[2023-01-19(목) #01]===')
+# i = 1
+# while i <= 15:
+# 	if i >= 5 and i <= 10 and i % 3 == 0:
+# 		print("안녕")
+# 	else:
+# 		print(i)
+# 	i += 1
