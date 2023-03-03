@@ -30,8 +30,8 @@ while i <= 15:
 	if i >= 5 and i <= 10 and i % 3 == 0:
 		print("안녕", end=" ")
 	else:
-		print()
-i += 1
+		print(i, end=" ")
+	i += 1
 
 # print('===[2023-01-19(목) #01]===')
 # i = 1
