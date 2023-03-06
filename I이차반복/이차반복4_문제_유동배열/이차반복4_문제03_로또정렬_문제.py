@@ -10,12 +10,15 @@ import random
 lotto = []
 
 print('===[2023-02-07 (화)]===')
-lotto = []
 
+def getList():
+	import random
+	lotto = []
+	i = 0
+	while len(lotto) < 6:
+		r = random.randint(1, 45)
+		lotto.append(r)
+		i += 1
+	return lotto
 
-i = 0
-while len(lotto) < 6:
-	r = random.randint(1, 45)
-	lotto.append(r)
-	i += 1
-print(lotto)
+print(getList())
