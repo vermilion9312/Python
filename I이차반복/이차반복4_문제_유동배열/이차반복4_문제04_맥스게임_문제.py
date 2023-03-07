@@ -19,4 +19,35 @@
       ...
       
   '''
+print('===[2023-03-07(화)]===')
+
+import random
+
 a = [11, 87, 42, 100, 24]
+i = 0
+while True:
+    zeroCheck = True
+
+    for v in a:
+        if v != 0:
+            zeroCheck = False
+
+    r = random.randint(0, 4)
+    print("랜덤:", r)
+    max = a[r]
+    maxCheck = True
+    for j in range(len(a)):
+        if max < a[j]:
+            maxCheck = False
+    if maxCheck:
+        a[r] = 0
+    print(a)
+
+    if zeroCheck:
+        break
+
+
+
+
+
+
