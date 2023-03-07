@@ -10,4 +10,36 @@
 			[5, 2, 1, 4] 모두홀수x => total = [1,2]
 			...
 '''
+import random
+
+
+
+print('===[2023-03-07(화)]===')
+
 total = []
+for __ in range(5):
+	
+	randomList = []
+	for _ in range(4):
+		r = random.randint(1, 9)
+		randomList.append(r)
+	print(randomList, end=" ")
+
+	oddCheck = True
+	for v in randomList:
+		if v % 2 == 0:
+			oddCheck = False
+
+	if oddCheck:
+		total.append(1)
+		print("모두홀수 => total =", total)
+	else:
+		total.append(2)
+		print("모두홀수x => total =", total)
+
+
+
+
+
+	
+
