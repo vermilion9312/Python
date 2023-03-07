@@ -8,5 +8,21 @@
 		
 		계속 반복하면서 strike가 3이 되면 종료한다.
 '''
+import random
 com = [0, 0, 0]
 me = [0, 0, 0]
+
+i = 0
+while i < len(com):
+	
+	rCom = random.randint(1, 9)
+
+	isDuplicate = False
+	if com[i] == rCom:
+		isDuplicate = True
+
+	if isDuplicate == False:
+		com[i] = rCom
+		i += 1
+
+print(com)
