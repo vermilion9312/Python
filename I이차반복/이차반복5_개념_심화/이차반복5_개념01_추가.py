@@ -8,7 +8,7 @@
 '''
 import random
 
-a = [1,2,3]
+
 
 
 
@@ -58,7 +58,7 @@ a = [1,2,3]
 #             check = True
 #             break
 #         j += 1
-    
+
 #     if check == False:
 #         a.append(r)
 #     i += 1
