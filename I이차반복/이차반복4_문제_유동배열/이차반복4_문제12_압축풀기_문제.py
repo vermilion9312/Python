@@ -12,8 +12,24 @@
     [정답] 
         b = [3,3,3,3,3,5,5,5,5,5,5,2,4,4,4]
 '''
-a = [3,5,2,4]
-count = [5,6,1,3]
+a = [3, 5, 2, 4]
+count = [5, 6, 1, 3]
 
 b = []
 
+print('===[2023-03-08(수) #02]===')
+
+for i in range(len(a)):
+    for j in range(count[i]):
+        b.append(a[i])
+print("b =", b)
+
+
+
+# print('===[2023-03-08(수) #01]===')
+# for v in a:
+#     i = 0
+#     for j in range(count[i]):
+#         b.append(v)
+#         i += 1
+# print(b)
