@@ -15,4 +15,27 @@
 		8 3 4 9 5  : 29
 		total = [26, 24, 23, 33, 13, 21, 27, 17, 23, 29]
 '''
+import random
+
 total = []
+
+print('===[2023-03-08(수)]===')
+
+for _ in range(10):
+
+	numList = []
+	sum = 0
+
+	for i in range(5):
+		r = random.randint(1, 9)
+		numList.append(r)
+		sum += r
+		print(r, end=" ")
+
+	total.append(sum)
+	print(":", sum)
+	
+print("total =", total)
+
+
+
