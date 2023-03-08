@@ -10,20 +10,57 @@ import random
 
 a = [1,2,3]
 
-i = 0
-while i < 10:
-    r = random.randint(1, 10)
 
-    check = False
-    j = 0
-    while j < len(a):
-        if r == a[j]:
-            check = True
-            break
-        j += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# print('===[정답]===')
+
+# i = 0
+# while i < 10:
+#     r = random.randint(1, 10)
+
+#     check = False
+#     j = 0
+#     while j < len(a):
+#         if r == a[j]:
+#             check = True
+#             break
+#         j += 1
     
-    if check == False:
-        a.append(r)
-    i += 1
+#     if check == False:
+#         a.append(r)
+#     i += 1
 
-print(a)
+# print(a)
