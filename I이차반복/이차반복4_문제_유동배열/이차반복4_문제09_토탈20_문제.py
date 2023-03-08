@@ -8,4 +8,35 @@
 		[5, 10, 5] x 
 '''
 
-a = [0,0,0]
+import random
+
+a = [0, 0, 0]
+
+print('===[2023-03-08(수)]===')
+
+i = 0
+total = 0
+while True:
+
+	r = random.randint(1, 10)
+
+	isDuplicate = False
+
+	j = 0
+	while j < i:
+		if r == a[j]:
+			isDuplicate = True
+		j += 1
+
+	if isDuplicate == False:
+		a[i] = r
+		i += 1
+		total += r
+
+	if i == len(a) and total == 20:
+		break
+	elif i == len(a) and total != 20:
+		i = 0
+		total = 0
+
+print(a)
