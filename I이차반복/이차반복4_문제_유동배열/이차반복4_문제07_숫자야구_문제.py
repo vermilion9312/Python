@@ -8,21 +8,54 @@
 		
 		계속 반복하면서 strike가 3이 되면 종료한다.
 '''
+
+print('===[2023-03-08(수)]===')
+
 import random
 com = [0, 0, 0]
 me = [0, 0, 0]
 
-i = 0
-while i < len(com):
-	
-	rCom = random.randint(1, 9)
+def getList(arr):
+	i = 0
+	while i < len(arr):
+		
+		r = random.randint(1, 9)
 
-	isDuplicate = False
-	if com[i] == rCom:
-		isDuplicate = True
+		isDuplicate = False
+		j = 0
+		while j < i:
+			if arr[j] == r:
+				isDuplicate = True
+				break
+			j += 1
 
-	if isDuplicate == False:
-		com[i] = rCom
-		i += 1
+		if isDuplicate == False:
+			arr[i] = r
+			i += 1
 
-print(com)
+	return arr
+
+
+com = getList(com)
+
+while True:
+
+	strike = 0
+	ball = 0
+	me = getList(me)
+
+	for i in range(len(com)):
+		for j in range(len(me)):
+			if com[i] == me[j]:
+				ball +=1
+				if i == j:
+					strike += 1
+
+	print("com:", com)
+	print("me:", me, ", ball:", ball, ", strike:", strike)
+	print()
+
+	if strike == len(com):
+		break
+
+
