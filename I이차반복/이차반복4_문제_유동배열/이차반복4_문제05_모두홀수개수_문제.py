@@ -12,8 +12,6 @@
 '''
 import random
 
-
-
 print('===[2023-03-07(화)]===')
 
 total = []
