@@ -11,18 +11,34 @@
 	[정답]
 		a = [80, 10, 70, 20, 60, 30, 40, 50]
 '''
-a = [10,20,30,40,50]
-index = [2,1,0]
-value = [60,70,80]
+a = [10, 20, 30, 40, 50]
+index = [2, 1, 0]
+value = [60, 70, 80]
 
-for i in range(3):
-	a.append(value)
+for i in range(len(index)):
 
-	j = len(a) - 1
-	while j > index[i]:
-		a[j] = a[j - 1]
-		j -= 1
-	
-	a[index[i]] = value[i]
+    a.append(0)
+
+    j = len(a) - 1
+    while j > index[i]:
+        a[j] = a[j - 1]
+        j -= 1
+
+    a[index[i]] = value[i]
 
 print(a)
+
+
+# print("===[정답풀이]====")
+
+# for i in range(3):
+# 	a.append(value)
+
+# 	j = len(a) - 1
+# 	while j > index[i]:
+# 		a[j] = a[j - 1]
+# 		j -= 1
+
+# 	a[index[i]] = value[i]
+
+# print(a)
