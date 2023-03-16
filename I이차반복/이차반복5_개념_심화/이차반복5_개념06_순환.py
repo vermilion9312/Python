@@ -11,26 +11,40 @@
 		a = [40,50,10,20,30]
   		a = [30,40,50,10,20]
 '''
-import random 
+import random
 
-a = [10,20,30,40,50]
+a = [10, 20, 30, 40, 50]
+
+print("===[230316-4-1206]===")
 
 r = random.randint(1, 5)
+print("a =", a)
 print("r =", r)
 
-for i in range(r):
-	index = len(a) - 1
-	temp = a[index]
+for _ in range(r):
+    temp = a[-1]
 
-	while index > 0:
-		a[index] = a[index - 1]
-		index -= 1
-	a[0] = temp
-	print(a)
+    i = len(a) - 1
+    while i > 0:
+        a[i] = a[i - 1]
+        i -= 1
 
+    a[0] = temp
 
-    
-
+    print("a =", a)
 
 
+# print("정답풀이")
 
+# r = random.randint(1, 5)
+# print("r =", r)
+
+# for i in range(r):
+#     index = len(a) - 1
+#     temp = a[index]
+
+#     while index > 0:
+#         a[index] = a[index - 1]
+#         index -= 1
+#     a[0] = temp
+#     print(a)
