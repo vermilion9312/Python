@@ -9,8 +9,44 @@
 import random
 
 
+a = [1, 2, 3]
+
+print("===[230316-1042-4]===")
+
+for _ in range(10):
+    
+    r = random.randint(1, 10)
+    isDuplicate = False
+
+    for v in a:
+        if r in a:
+            isDuplicate = True
+            break
+    
+    if isDuplicate == False:
+        a.append(r)
+
+print(a)
 
 
+
+
+# print('===[230316-1038-4]===')
+
+# for _ in range(10):
+
+#     r = random.randint(1, 10)
+#     isDuplicate = False
+
+#     for i in range(len(a)):
+#         if r == a[i]:
+#             isDuplicate = True
+#             break
+
+#     if isDuplicate == False:
+#         a.append(r)
+
+# print(a)
 
 
 
