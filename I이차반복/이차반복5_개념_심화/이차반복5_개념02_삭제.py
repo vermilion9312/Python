@@ -18,22 +18,41 @@
 '''
 import random
 
-a = [1,2,3,4,5]
+a = [1, 2, 3, 4, 5]
 
-for i in range(10):
-	r = random.randint(1, 10)
-	print("r =", r, end=" : ")
+print("===[230316-4-1050]===")
 
-	check = -1
-	for j in range(len(a)):
-		if r == a[j]:
-			check = j
-			break
-	
-	if check != -1:
-		del a[check]
-		print(a)
-	else:
-		print("삭제불가")
+for _ in range(10):
 
-		
+    r = random.randint(1, 10)
+    isDuplicate = False
+
+    for i in range(len(a)):
+        if r == a[i]:
+            isDuplicate = True
+            break
+
+    if isDuplicate:
+        a.remove(r)
+        print("r =", r, ":", a)
+    else:
+        print("r =", r, ": 삭제불가")
+
+
+# print("===[정답풀이]===")
+
+# for i in range(10):
+#     r = random.randint(1, 10)
+#     print("r =", r, end=" : ")
+
+#     check = -1
+#     for j in range(len(a)):
+#         if r == a[j]:
+#             check = j
+#             break
+
+#     if check != -1:
+#         del a[check]
+#         print(a)
+#     else:
+#         print("삭제불가")
