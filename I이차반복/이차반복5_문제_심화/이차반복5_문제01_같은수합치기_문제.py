@@ -20,12 +20,6 @@ b = [0, 0, 0, 0, 0, 0, 0]
 
 
 for i in range(len(a) - 1):
-    if a[i] == a[i + 1]:
-        a[i] = 2 * a[i]
-        index = i + 1
-        break
-
-i = index
-while i < len(a) - 1:
-    a[i] = a[i + 1]
-    i += 1
+    b[i] = a[i]
+    if
+    print(b)
