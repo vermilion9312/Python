@@ -7,6 +7,15 @@
 '''
 a = [1, 1, 2, 2, 3, 3, 4, 100, 3]
 
+print("fsdf")
+for v in a:
+    isDuplicate = False
+    
+
+    if isDuplicate == False:
+        print(v)
+    
+
 
 print('===[2023-02-07 (화) #03]===')
 a = [1, 1, 2, 2, 3, 3, 4, 100, 3]

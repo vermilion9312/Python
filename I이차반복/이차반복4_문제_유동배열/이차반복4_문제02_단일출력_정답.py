@@ -10,7 +10,7 @@ a = [1,1,2,2,3,3,4,100,3]
 for i in range(len(a)):
 
 	check = False
-	for j in range(i + 1):
+	for j in range(i):
 		if i != j and a[i] == a[j]:
 			check = True
 			break
