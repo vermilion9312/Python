@@ -10,6 +10,9 @@ a = [10, 20, 30, 60]
 b = [40, 30, 20, 50]
 total = []
 
+
+
+
 print('===[2023-02-07 (화) #03]===')
 for i in range(len(a)):
 	for j in range(len(a)):
