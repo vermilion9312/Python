@@ -17,6 +17,10 @@
 '''
 '''
 [8, 4, 2, 2, 4, 4, 8]
+[8, 4, 4, 2, 4, 4, 8]
+[8, 4, 4, 4, 4, 8, 0]
+
+
 [8, 4, 4, 4, 4, 8, 0]
 [8, 8, 4, 4, 8, 0, 0]
 [16, 4, 4, 8, 0, 0, 0]
@@ -24,22 +28,33 @@
 [16, 16, 0, 0, 0, 0, 0]
 [32, 0, 0, 0, 0, 0, 0]
 '''
+
+print("===[230404-2-1641]===")
+
 a = [8, 4, 2, 2, 4, 4, 8]
-
 b = [0, 0, 0, 0, 0, 0, 0]
-k = 0
-for i in range(len(a) - 1):
-    if a[i] == a[i + 1]:
-        a[i] = 2 * a[i]
-        j = i + 1
-        break
 
-length = len(a) - 1 - k
-while j < length:
-    a[j] = a[j + 1]
-    if j == length - 1:
-		print(j)
-        a[j] = 0
-    j += 1
-k += 1
-print(a)
+end = len(a) - 1
+
+while True:
+
+    check = True
+
+    for i in range(len(a) - 1):
+        if a[i] != 0 and a[i] == a[i + 1]:
+            check = False
+            a[i] = 2 * a[i + 1]
+            j = i + 1
+            break
+
+    while j < len(a) - 1:
+        a[j] = a[j + 1]
+        j += 1
+
+    a[end] = 0
+    end -= 1
+
+    if check:
+        break
+    else:
+        print(a)
