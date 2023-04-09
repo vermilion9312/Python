@@ -14,3 +14,7 @@ money = [50000, 10000, 5000, 1000, 500, 100]
 count = [    1,     1,    1,    1,   5,  10]
 
 charge = 7800
+
+for i in range(len(money)):
+    charge %= money[i]
+    if charge < money[i]:
