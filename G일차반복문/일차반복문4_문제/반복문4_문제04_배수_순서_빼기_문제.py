@@ -11,3 +11,20 @@
         아래 식은 카운트를 한 번만 사용하는 것이 아니라 
         두 번 사용한 경우이다.
 '''
+print("===[2023-09-21 (목)]===")
+
+num = 1
+answer = 0
+count = 0
+
+while True:
+    if num % 13 == 0:
+        if count == 4:
+            answer -= num
+        if count == 6:
+            answer += num
+            break
+        count += 1
+    num += 1
+
+print(answer)

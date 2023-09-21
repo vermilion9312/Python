@@ -5,3 +5,19 @@
 	[정답]
 		24
 '''
+
+print("===[2023-09-21 (목)]===")
+
+num = 1
+count = 0
+
+while True:
+    
+	if 120 % num == 0 and num % 10 == 4:
+		count += 1
+
+		if count == 2:
+			print(num)
+			break
+
+	num += 1

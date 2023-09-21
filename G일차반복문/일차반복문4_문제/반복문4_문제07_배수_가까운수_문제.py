@@ -5,3 +5,21 @@
  	[정답]
 		102
 '''
+
+print("===[2023-09-21 (목)]===")
+
+num = 1
+
+while True:
+	if num % 6 == 0:
+		if num < 100:
+			underNum = num
+		elif num > 100:
+			overNum = num
+			break
+	num += 1
+
+if 100 - underNum < overNum - 100:
+	print(underNum)
+else:
+	print(overNum)

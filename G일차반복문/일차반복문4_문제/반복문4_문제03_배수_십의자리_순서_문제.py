@@ -5,3 +5,13 @@
 	[정답]
 		369
 '''
+print("===[2023-09-21 (목)]===")
+i = 1
+count = 0
+while True:
+    if i % 9 == 0 and i % 100 // 10 == 6:
+        count += 1
+        if count == 5:
+            print(i)
+            break
+    i += 1

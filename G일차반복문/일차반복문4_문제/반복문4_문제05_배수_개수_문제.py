@@ -7,3 +7,18 @@
 		105 112 119 126 133 
 '''
 
+print("===[2023-09-21 (목)]===")
+
+num = 100
+count = 0
+
+while True:
+    
+    if num % 7 == 0:
+        print(num, end=" ")
+        count += 1
+        
+        if count == 5:
+            break
+        
+    num += 1

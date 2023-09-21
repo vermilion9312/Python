@@ -12,3 +12,23 @@
 		카드 = 20
 		현금 = 5
 '''
+
+print("===[2023-09-21 (목)]===")
+
+students = 25
+totalFares = 19400
+cardFares = 720
+cashFares = 1000
+
+x = 1
+y = students - x
+
+while True:
+    
+	if x * cardFares + y * cashFares == totalFares:
+		break
+
+	cardStudentCount += 1
+
+print("카드 =", cardStudentCount)
+print("현금 =", cashStudentCount)

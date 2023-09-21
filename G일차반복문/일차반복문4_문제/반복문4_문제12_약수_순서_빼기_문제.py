@@ -5,3 +5,23 @@
 	[정답]
 		8
 '''
+
+print("===[2023-09-21 (목)]===")
+
+num = 1
+count = 0
+
+while True:
+    
+	if 100 % num == 0:
+		count += 1
+
+		if count == 2:
+			answer = -num
+		if count == 5:
+			answer += num
+			break
+
+	num += 1
+
+print(answer)
