@@ -8,3 +8,23 @@
 	[정답]
 		11
 '''
+
+print("===[2023-09-22 (금)]===")
+
+PLAIN_MILK_PRICE = 1000
+CHOCO_MILK_PRICE = 1200
+TOTAL_MILK_COUNT = 15
+TOTAL_MILK_PAYMENT = 20000 - 4200
+
+plainMilkCount = 0
+
+while True:
+    
+	chocoMilkCount = TOTAL_MILK_COUNT - plainMilkCount
+
+	if PLAIN_MILK_PRICE * plainMilkCount + CHOCO_MILK_PRICE * chocoMilkCount == TOTAL_MILK_PAYMENT:
+		break
+
+	plainMilkCount += 1
+
+print(plainMilkCount)

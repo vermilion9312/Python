@@ -13,7 +13,7 @@
 		현금 = 5
 '''
 
-print("===[2023-09-21 (목)]===")
+print("===[2023-09-22 (금)]===")
 
 students = 25
 totalFares = 19400
@@ -21,14 +21,15 @@ cardFares = 720
 cashFares = 1000
 
 x = 1
-y = students - x
 
 while True:
+
+	y = students - x
     
 	if x * cardFares + y * cashFares == totalFares:
 		break
 
-	cardStudentCount += 1
+	x += 1
 
-print("카드 =", cardStudentCount)
-print("현금 =", cashStudentCount)
+print("카드 =", x)
+print("현금 =", y)

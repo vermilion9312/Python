@@ -8,3 +8,22 @@
 	[정답]
 		94
 '''
+
+print("===[2023-09-22 (금)]===")
+
+import math
+
+FIRST_SCORE = 80
+SECOND_SCORE = 72
+SCORE_AVG = 82
+
+thirdScore = 0
+
+while True:
+
+	if (FIRST_SCORE + SECOND_SCORE + thirdScore) / 3 >= SCORE_AVG:
+		break
+    
+	thirdScore += 1
+
+print(thirdScore)
