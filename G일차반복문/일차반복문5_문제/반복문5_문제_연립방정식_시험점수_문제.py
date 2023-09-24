@@ -8,3 +8,21 @@
 		4점 문제 = 10
 		5점 문제 = 10
 '''
+
+print("===[2023-09-22 (금)]===")
+
+fourPointCount = 0
+TOTAL_EXAM_COUNT = 20
+TOTAL_EXAM_POINT = 90
+
+while True:
+	
+	fivePointCount = TOTAL_EXAM_COUNT - fourPointCount
+    
+	if 4 * fourPointCount + 5 * fivePointCount == TOTAL_EXAM_POINT:
+		break
+
+	fourPointCount += 1
+
+print("4점 문제 =", fourPointCount)
+print("5점 문제 =", fivePointCount)

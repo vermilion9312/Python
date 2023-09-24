@@ -8,3 +8,19 @@
 	[정답]
 		4501
 '''
+
+print("===[2023-09-22 (금)]===")
+
+A_PLAN = 17500
+B_PLAN = 31000
+
+seconds = 0
+
+while True:
+
+	if B_PLAN + 2 * seconds < A_PLAN + 5 * seconds:
+		break
+    
+	seconds += 1
+
+print(seconds)

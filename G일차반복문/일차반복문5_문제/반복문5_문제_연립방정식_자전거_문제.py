@@ -6,3 +6,19 @@
 	[정답]
 		3.0
 '''
+
+print("===[2023-09-21 (목)]===")
+
+BIKE_SPEED = 15 / 60
+WALK_SPEED = 6 / 60
+
+distance = 0
+
+while True:
+
+	if distance / BIKE_SPEED + 18 == distance / WALK_SPEED:
+		break
+    
+	distance += 1
+
+print(distance)

@@ -6,3 +6,17 @@
 		3
 '''
 
+print("===[2023-09-22 (금)]===")
+
+myAge = 13
+fatherAge = 45
+yearCount = 0
+
+while True:
+	
+	yearCount += 1
+
+	if 3 * (myAge + yearCount) == fatherAge + yearCount:
+		break
+    
+print(yearCount)
