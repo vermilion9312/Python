@@ -8,4 +8,8 @@
 
 a = [10,43,24,12,52]
 
+print('===[2023-09-23(토)]===')
 
+for item in a:
+    if item % 3 == 0:
+        print(item)

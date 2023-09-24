@@ -13,5 +13,12 @@
 a = [10,43,23,12,53]
 b = [54,6,4,12,50]
 
+print('===[2023-09-23(토)]===')
 
-
+for i in range(len(a)):
+    if a[i] > b[i]:
+        print(a[i])
+    elif a[i] < b[i]:
+        print(b[i])
+    else:
+        print(a[i], b[i])
