@@ -4,3 +4,13 @@
 	[정답]
 		15
 '''
+
+num = 1
+
+while True:
+
+	if 45 % num == 0 and 60 % num == 0 and 75 % num == 0:
+		print(num)
+		break
+
+	num += 1
