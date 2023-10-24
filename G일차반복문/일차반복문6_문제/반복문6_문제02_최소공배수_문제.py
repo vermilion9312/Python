@@ -5,3 +5,14 @@
 	900
 '''
 
+print("===[2023-10-25 (수)]===")
+
+num = 1
+
+while True:
+    
+	if num % 45 == 0 and num % 60 == 0 and num % 75 == 0:
+		print(num)
+		break
+
+	num += 1
