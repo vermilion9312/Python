@@ -8,3 +8,12 @@
 	[정답]
 		2
 '''
+
+print("===[2023-10-27 (금)]===")
+
+CHEOLSU_RUNNING_TIME = 70
+MINSU_RUNNING_TIME = 90
+
+seconds = 1
+
+while seconds <=

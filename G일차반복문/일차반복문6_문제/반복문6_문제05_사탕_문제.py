@@ -6,3 +6,19 @@
 	[정답]
 		12
 '''
+
+print("===[2023-10-27 (금)]===")
+
+CANDY = 62
+CHOCHOLATE = 88
+
+student = 1
+
+while student <= CANDY:
+    
+	if CANDY % student == 2 and CHOCHOLATE % student == 4:
+		quotient = student
+
+	student += 1
+
+print(quotient)

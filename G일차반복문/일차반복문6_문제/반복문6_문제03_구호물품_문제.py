@@ -6,3 +6,19 @@
 	[정답]
 		24
 '''
+
+print("===[2023-10-25 (수)]===")
+
+DISINFECTANT = 120
+BANDAGE = 72
+
+patient = 1
+
+while patient <= BANDAGE:
+
+	if BANDAGE % patient == 0 and DISINFECTANT % patient == 0:
+		resultPatient = patient
+    
+	patient += 1
+	
+print(resultPatient)

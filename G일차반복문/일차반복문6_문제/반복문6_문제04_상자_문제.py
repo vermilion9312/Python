@@ -8,3 +8,20 @@
 		자동차 = 2
 		로봇 = 3
 '''
+
+print("===[2023-10-27 (금)]===")
+
+CAR = 28
+ROBOT = 42
+
+box = 1
+
+while box <= CAR:
+    
+	if CAR % box == 0 and ROBOT % box == 0:
+		modBox = box
+
+	box += 1
+
+print("자동차 =", CAR // modBox)
+print("로봇 =", ROBOT // modBox)
