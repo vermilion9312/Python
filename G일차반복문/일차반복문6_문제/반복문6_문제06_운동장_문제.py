@@ -13,7 +13,12 @@ print("===[2023-10-27 (금)]===")
 
 CHEOLSU_RUNNING_TIME = 70
 MINSU_RUNNING_TIME = 90
+RUNNING_TIME = 60 * 30
 
-seconds = 1
+encounterCount = 1
 
-while seconds <=
+while CHEOLSU_RUNNING_TIME * encounterCount <= RUNNING_TIME:
+
+	if 
+    
+	encounterCount += 1
