@@ -8,3 +8,18 @@
 	[정답]
 		23
 '''
+
+print("===[2024-02-26 (월)]===")
+
+철수 = 4
+민수 = 5
+
+meeting = 3
+
+i = 1
+while True:
+    if i % 철수 == 0 and i % 민수 == 0:
+        meeting += i
+        break
+    i += 1
+print(meeting)

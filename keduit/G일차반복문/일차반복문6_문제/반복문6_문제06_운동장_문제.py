@@ -9,16 +9,22 @@
 		2
 '''
 
-print("===[2023-10-27 (금)]===")
+print("===[2024-02-26 (월)]===")
 
-CHEOLSU_RUNNING_TIME = 70
-MINSU_RUNNING_TIME = 90
-RUNNING_TIME = 60 * 30
+CS_RUNNING_TIME = 70
+MS_RUNNING_TIME = 90
+RUNNING_TIME = 30 * 60
 
-encounterCount = 1
+encounterCount = 0
 
-while CHEOLSU_RUNNING_TIME * encounterCount <= RUNNING_TIME:
 
-	if 
+seconds = 1
+while seconds <= RUNNING_TIME:
     
-	encounterCount += 1
+	if seconds % CS_RUNNING_TIME == 0 and seconds % MS_RUNNING_TIME == 0:
+		print(seconds, end=" ")
+		encounterCount += 1
+
+	seconds += 1
+
+print(encounterCount)
